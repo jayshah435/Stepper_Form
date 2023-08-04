@@ -1,3 +1,4 @@
+import './App.css';
 import {
   Grid,
   Button,
@@ -247,13 +248,13 @@ function UserInfo({
         </Grid>
       </Grid>
 
-      <Box display="flex">
-        <Box margin="10px 10px 0 0">
+      <Box className="btnMaindiv">
+        <Box className="btnBack">
           <Button variant="contained" disabled>
             BACK
           </Button>
         </Box>
-        <Box margin="10px 0 0 0">
+        <Box className="btnNext">
           <Button variant="contained" onClick={handleUserInfoSubmit}>
             NEXT
           </Button>

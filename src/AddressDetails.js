@@ -1,3 +1,4 @@
+import './App.css';
 import {
   Grid,
   TextField,
@@ -160,13 +161,13 @@ function AddressDetails({
         </Grid>
       </Grid>
 
-      <Box display="flex">
-        <Box margin="10px 10px 0 0">
+      <Box className="btnMaindiv">
+        <Box className="btnBack">
           <Button variant="contained" onClick={handlePrevButton}>
             BACK
           </Button>
         </Box>
-        <Box margin="10px 0 0 0">
+        <Box className="btnNext">
           <Button variant="contained" onClick={handleAddressSubmit}>
             NEXT
           </Button>

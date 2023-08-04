@@ -1,3 +1,4 @@
+import './App.css';
 import UserInfo from "./UserInfo";
 import AddressDetails from "./AddressDetails";
 import ThankYou from "./ThankYou";
@@ -350,16 +351,13 @@ function App() {
   switch (stepNo) {
     case 0:
       return (
-        <Container>
+        <Box className='formContainerDiv'>
           <Box
             component="form"
-            display="flex"
-            justifyContent="center"
-            flexDirection="column"
-            margin="20px"
+            className='formMainDiv'
           >
-            <Box padding="10px">
-              <Box width="100%">
+            <Box className='formChildDiv'>
+              <Box className="formNestedChildDiv">
                 <Stepper activeStep={stepNo} alternativeLabel>
                   {stepNames.map((label) => (
                     <Step key={label}>
@@ -376,20 +374,17 @@ function App() {
               handleUserInfoSubmit={handleUserInfoSubmit}
             />
           </Box>
-        </Container>
+        </Box>
       );
     case 1:
       return (
-        <Container>
+        <Box className='formContainerDiv'>
           <Box
             component="form"
-            display="flex"
-            justifyContent="center"
-            flexDirection="column"
-            margin="20px"
+            className='formMainDiv'
           >
-            <Box padding="10px">
-              <Box width="100%">
+            <Box className='formChildDiv'>
+              <Box className="formNestedChildDiv">
                 <Stepper activeStep={stepNo} alternativeLabel>
                   {stepNames.map((label) => (
                     <Step key={label}>
@@ -407,20 +402,17 @@ function App() {
               handlePrevButton={handlePrevButton}
             />
           </Box>
-        </Container>
+        </Box>
       );
     case 2:
       return (
-        <Container>
+        <Box className='formContainerDiv'>
           <Box
             component="form"
-            display="flex"
-            justifyContent="center"
-            flexDirection="column"
-            margin="20px"
+            className='formMainDiv'
           >
-            <Box padding="10px">
-              <Box width="100%">
+            <Box className='formChildDiv'>
+              <Box className="formNestedChildDiv">
                 <Stepper activeStep={stepNo} alternativeLabel>
                   {stepNames.map((label) => (
                     <Step key={label}>
@@ -435,8 +427,10 @@ function App() {
               addressValue={addressValue}
             />
           </Box>
-        </Container>
+        </Box>
       );
+      default:
+        return("Default case")
   }
 }
 

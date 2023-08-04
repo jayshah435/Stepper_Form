@@ -1,3 +1,4 @@
+import './App.css';
 import {
   Box,
   Table,
@@ -63,7 +64,7 @@ function ThankYou({ userInfoValue, addressValue }) {
   return (
     <>
       <Box>
-        <Typography variant="h4" color="green">
+        <Typography variant="h4" className='tyTitleName'>
           Data added successfully
         </Typography>
       </Box>

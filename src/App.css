@@ -1,0 +1,58 @@
+/* App Component classes starts here*/
+
+
+.formMainDiv {
+    padding: 20px;
+    background-color: white;
+}
+@media (max-width: 600px) {
+    .formContainerDiv{
+        background-color: #ECE2C8;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .formContainerDiv{
+        background-color: #ECE2C8;
+        padding: 20px;
+        height: 100vh;
+    }
+}
+
+.formNestedChildDiv{
+   padding: 10px;
+}
+
+/* App Component classes ends here*/
+
+
+/* Button Classes starts here */
+.btnMaindiv{
+    display: flex;
+}
+
+.btnBack{
+    margin: 10px 10px 0 0;
+}
+
+.btnNext{
+    margin: 10px 0 0 0;
+}
+/* Button Classes Ends here */
+
+
+/* ThankYou Component classes starts here*/
+.tyTitleName{
+    color: green;
+}
+/* ThankYou Component classes ends here*/
+
+.css-1ygcj2i-MuiTableCell-root{
+padding: 0 !important;
+}
+
+.css-1ex1afd-MuiTableCell-root{
+padding: 0 !important;
+}
