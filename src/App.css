@@ -1,24 +1,17 @@
 /* App Component classes starts here*/
 
+body{
+    background-color: #ECE2C8;
+}
 
 .formMainDiv {
     padding: 20px;
     background-color: white;
 }
-@media (max-width: 600px) {
-    .formContainerDiv{
-        background-color: #ECE2C8;
-        padding: 20px;
-        height: auto;
-    }
-}
 
-@media (min-width: 600px) {
-    .formContainerDiv{
-        background-color: #ECE2C8;
-        padding: 20px;
-        height: 100vh;
-    }
+.formContainerDiv{
+    padding: 20px;
+    height: auto;
 }
 
 .formNestedChildDiv{
