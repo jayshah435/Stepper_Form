@@ -2,7 +2,7 @@ import './App.css';
 import UserInfo from "./UserInfo";
 import AddressDetails from "./AddressDetails";
 import ThankYou from "./ThankYou";
-import { Box, Container, Stepper, Step, StepLabel } from "@mui/material";
+import { Box, Stepper, Step, StepLabel } from "@mui/material";
 import { useState } from "react";
 
 function App() {
